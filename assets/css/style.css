@@ -1,48 +1,100 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {
+	box-sizing: border-box;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html {
+	font-size: 62.5%;
+	font-family: "Poppins", sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
-	line-height: 1;
+	font-size: 1.6rem;
 }
-ol, ul {
-	list-style: none;
+
+a {
+	text-decoration: none;
 }
-blockquote, q {
-	quotes: none;
+
+/* commom */
+
+.content {
+	width: 1170px;
+	max-width: calc(100% - 48px);
+	margin-left: auto;
+	margin-right: auto;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.btn {
+	display: inline-block;
+	padding: 8px 16px;
+	min-width: 118px;
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 24.5px;
+	background: #171100;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* main header */
+.header {
+	background-color: rgb(186, 201, 201);
+}
+.header .fixed {
+	position: sticky;
+	top: -28px;
+}
+
+.header .body {
+	display: flex;
+	align-items: center;
+	padding: 36px 0 8px;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.nav {
+	margin-left: auto;
+}
+
+.nav ul {
+	display: flex;
+}
+
+.nav a {
+	position: relative;
+	padding: 8px 21px;
+	font-size: 1.6rem;
+	color: #5f5b53;
+}
+
+.nav a:hover,
+.nav li.active a {
+	/* font-weight: 600; */
+	text-shadow: 1px 0 0 currentColor;
+	color: #171100;
+
+}
+
+.nav li.active a::after {
+	position: absolute;
+	bottom: 6px;
+	left: 21px;
+	content: "";
+	display: block;
+	width: 12px;
+	height: 2px;
+	background-color: #171100;
+	margin-top: 1px;
+} 
+
+.header .sign-up-btn {
+	min-width: 144px;
+}
+
+.header .action {
+	margin-left: 49px;
 }
