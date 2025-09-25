@@ -37,7 +37,7 @@ a {
 }
 /* main header */
 .header {
-	background-color: rgb(186, 201, 201);
+	background-color: #FFFCF4;
 }
 .header .fixed {
 	position: sticky;
@@ -51,8 +51,6 @@ a {
 }
 
 .logo {
-	width: 60px;
-	height: 60px;
 	object-fit: cover;
 }
 
