@@ -404,3 +404,72 @@ a {
 	color: #FFF;
 	background-color: var(--primary-color);
 }
+
+.feedback {
+	margin-top: 135px;
+	padding: 96px 0;
+	background: #2E2100;
+
+}
+
+.feedback .feedback-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feedback-item  .avatar {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.feedback-item .title {
+	margin-top: 18px;
+	color: #F7F7F7;
+	font-family: var(--font-heading);
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .desc {
+	margin-top: 4px;
+	color: #BFBCB2;
+	font-size: 1.4rem;
+	line-height: 1.85; /* 175% */
+}
+
+.feedback-item .dots {
+	display: flex;
+	margin-top: 28px;
+}
+
+.feedback-item .dots .dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #5F5B53;
+	margin-right: 8px;
+	opacity: 0.5;
+}
+
+.feedback-item .dots .active {
+	background-color: var(--primary-color);
+	cursor: default;
+}
+
+.feedback-item .content {
+	width: 66%;
+	margin-left: auto;
+}
+
+.feedback-item blockquote {
+	margin-left: 30px;
+	color: #FFF;
+	font-size: 2.6rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.53; /* 153.846% */
+}
